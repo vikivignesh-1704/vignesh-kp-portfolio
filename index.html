@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vignesh K P — Hardware &amp; Software Engineer</title>
+<meta name="description" content="Vignesh K P — Electronics &amp; Communication Engineering student working across VLSI/IoT hardware design and software/web development. One engineer, two domains." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Vignesh K P — Hardware ⇄ Software Engineer" />
+<meta property="og:description" content="VLSI, IoT and embedded systems on the hardware side; React and web development on the software side. Explore both." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/nav-hero.css" />
+<link rel="stylesheet" href="css/sections.css" />
+</head>
+<body data-mode="hardware">
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Vignesh K P, home">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="logo-full">Vignesh K P</span>
+      <span class="logo-short">VKP</span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li data-mode-only="hardware"><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <div class="mode-switch" role="group" aria-label="Portfolio mode">
+        <span class="thumb" aria-hidden="true"></span>
+        <button type="button" id="switchHardware" aria-pressed="true"><span aria-hidden="true">⚡</span><span class="txt">Hardware</span></button>
+        <button type="button" id="switchSoftware" aria-pressed="false"><span aria-hidden="true">💻</span><span class="txt">Software</span></button>
+      </div>
+
+      <button class="nav-burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel">
+  <div class="mobile-panel-inner">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li data-mode-only="hardware"><a href="#publications">Publications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-eyebrow-row">
+          <span class="eyebrow" id="heroEyebrow">Electronics &amp; Communication Engineering</span>
+        </div>
+        <h1 id="heroHeadline">One engineer, <span class="hl">two domains.</span></h1>
+        <p class="hero-sub" id="heroSub"></p>
+        <div class="hero-keywords" id="heroKeywords"></div>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#" id="heroResumeLink" class="btn" target="_blank" rel="noopener noreferrer">View Resume</a>
+        </div>
+        <div class="hero-meta" id="heroMeta"></div>
+      </div>
+      <div class="hero-visual" id="heroVisual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <span class="eyebrow">About</span>
+        <h2 style="margin-top:10px;">Engineering across silicon and software</h2>
+        <p id="aboutObjective" style="margin-top:20px;"></p>
+        <p style="margin-top:16px;">Currently pursuing a B.E. in Electronics and Communication Engineering at Sethu Institute of Technology, Virudhunagar, with hands-on exposure spanning VLSI/device-level design, embedded systems, and web application development — building comfort at the intersection of hardware and software rather than treating them as separate tracks.</p>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Current focus</span>
+        <ul class="focus-list" id="focusList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" id="projectsEyebrow">Selected work</span>
+        <h2>Projects</h2>
+        <p id="projectsIntro"></p>
+      </div>
+      <div class="project-grid" id="projectGrid"></div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Track record</span>
+        <h2>Experience</h2>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Toolkit</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============ PUBLICATIONS (hardware only) ============ -->
+  <section id="publications" data-mode-only="hardware">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Research</span>
+        <h2>Publications &amp; Research</h2>
+        <p>Conference papers accepted for presentation, drawn directly from the current academic record.</p>
+      </div>
+      <div class="pub-list" id="pubList"></div>
+    </div>
+  </section>
+
+  <div class="container" data-mode-only="hardware"><div class="divider"></div></div>
+
+  <!-- ============ EDUCATION + CERTIFICATIONS ============ -->
+  <section id="education">
+    <div class="container edu-cert-grid">
+      <div class="reveal">
+        <span class="eyebrow">Education</span>
+        <h2 style="margin-top:10px; margin-bottom:8px; font-size:1.6rem;">Academic record</h2>
+        <div id="eduList" style="margin-top:14px;"></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Certifications</span>
+        <h2 style="margin-top:10px; margin-bottom:8px; font-size:1.6rem;">Certifications</h2>
+        <div class="cert-list" id="certList" style="margin-top:14px;"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container contact-wrap">
+      <div class="reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2 style="margin-top:10px;">Let's build something.</h2>
+        <p style="margin-top:16px;">Open to opportunities across hardware and software engineering — reach out directly, or use the form.</p>
+        <div class="contact-links" id="contactLinks"></div>
+      </div>
+      <form class="reveal" id="contactForm" action="#" method="post">
+        <div class="form-field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="form-field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="form-field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note">This form opens your email client via a mailto link — no backend is connected yet. To wire it up for real, connect a service like Formspree or EmailJS (see README).</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div style="font-family: var(--font-display); font-weight:600;">Vignesh K P</div>
+      <div class="footer-mode" id="footerMode">Hardware mode</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/vigneshkp1704" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/vikivignesh-1704" target="_blank" rel="noopener noreferrer" id="footerGithub">GitHub</a>
+      <a href="mailto:vikivignesh1704@gmail.com">Email</a>
+    </div>
+    <div class="footer-copy">&copy; <span id="year"></span> Vignesh K P</div>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <div class="modal-top">
+      <div>
+        <span class="eyebrow" id="modalDomain"></span>
+        <h3 id="modalTitle"></h3>
+      </div>
+      <button class="modal-close" id="modalClose" aria-label="Close project details">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-domain-row" id="modalTags"></div>
+    <ul id="modalPoints"></ul>
+    <div class="modal-links" id="modalLinks"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
